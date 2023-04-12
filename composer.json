@@ -1,17 +1,17 @@
 {
-    "name": "kotocelot3/kotocelot",
-    "description": "pnss",
+    "name": "jurapro/pop-it-mvc",
+    "description": "Simple mvc framework",
     "type": "project",
     "license": "MIT",
     "authors": [
         {
-            "name": "kotocelot"
+            "name": "jurapro",
+            "email": "jurapro@yandex.ru"
         }
     ],
     "minimum-stability": "dev",
     "require": {
         "php": "^7.4 | ^8.0"
-
     },
     "autoload": {
         "psr-4": {
@@ -19,4 +19,6 @@
             "": "app/"
         }
     }
+
 }
+
