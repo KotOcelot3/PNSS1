@@ -5,6 +5,7 @@ namespace Src;
 use Error;
 
 class Settings
+
 {
     private array $_settings;
 
