@@ -12,7 +12,7 @@ class Site
     public function signup(Request $request): string
     {
         if ($request->method === 'POST' && User::create($request->all())) {
-            app()->route->redirect('/go');
+            app()->route->redirect('/hello');
         }
         return new View('site.signup');
     }
@@ -36,6 +36,7 @@ class Site
         Auth::logout();
         app()->route->redirect('/hello');
     }
+
 
 
     public function hello(): string

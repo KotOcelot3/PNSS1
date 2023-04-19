@@ -44,4 +44,3 @@ class User extends Model implements IdentityInterface
             'password' => md5($credentials['password'])])->first();
     }
 }
-
