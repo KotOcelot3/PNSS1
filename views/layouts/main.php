@@ -11,6 +11,8 @@
 <header>
     <nav>
         <a href="<?= app()->route->getUrl('/hello') ?>">Главная</a>
+        <a href="<?= app()->route->getUrl('/record') ?>">Создать запись</a>
+        <a href="<?= app()->route->getUrl('/post') ?>">Список записей</a>
         <?php
         if (!app()->auth::check()):
             ?>

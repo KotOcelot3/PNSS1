@@ -3,7 +3,7 @@
 namespace Controller;
 
 use Model\User;
-use Model\Post;
+//use Model\Post;
 use Src\View;
 use Src\Request;
 use Src\Auth\Auth;
@@ -43,5 +43,21 @@ class Site
     {
         return new View('site.hello', ['message' => 'hello working']);
     }
+
+    public function record(Request $request): string
+    {
+        if ($request->method === 'POST' && User::create($request->all())) {
+            app()->route->redirect('/hello');
+        }
+        return new View('site.record');
+    }
+
+    public function post(): string
+    {
+        return new View('site.post', ['message' => 'hello working']);
+    }
+
+
 }
 
+//var_dump($validator); die();
